@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../model/post.dart';
+// import '../model/post.dart';
 
 class SliverDemo extends StatelessWidget {
   @override
@@ -7,23 +7,23 @@ class SliverDemo extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
-         SliverGrid(
-           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-             crossAxisCount: 2,
-             crossAxisSpacing: 8.0,
-             mainAxisSpacing: 8.0,
-             childAspectRatio: 1.0
-           ),
-           childCount: posts.length
-           delegate: SliverChildBuilderDelegate(BuildContext context, int index) {
-             return Container(
-               child: Image.network(
-                 posts[index].imageUrl,
-                 fit: BoxFit.cover,
-               ),
-             );
-           },
-         )
+        //  SliverGrid(
+        //    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        //      crossAxisCount: 2,
+        //      crossAxisSpacing: 8.0,
+        //      mainAxisSpacing: 8.0,
+        //      childAspectRatio: 1.0
+        //    ),
+        //   //  childCount: posts.length
+        //    delegate: SliverChildBuilderDelegate(BuildContext context, int index) {
+        //      return Container(
+        //        child: Image.network(
+        //          posts[index].imageUrl,
+        //          fit: BoxFit.cover,
+        //        ),
+        //      );
+        //    },
+        //  )
         ],
       ),
     );

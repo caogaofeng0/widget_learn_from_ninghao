@@ -8,7 +8,6 @@ class BottomNavigationBarDemo extends StatefulWidget {
 class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
   int _currentIndex = 0;
   void _onTapHandler (int index) {
-    setState;
     setState(() {
       _currentIndex = index;
     });

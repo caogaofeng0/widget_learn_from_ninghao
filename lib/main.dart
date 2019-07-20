@@ -5,18 +5,20 @@ import './demo/listview_demo.dart';
 import './demo/basic_demo.dart';
 import './demo/layout_demo.dart';
 import './demo/view_demo.dart';
-import './demo/sliver_demo.dart';
-import './demo/navigator_demo.dart';
-
+// import './demo/sliver_demo.dart';
+// import './demo/navigator_demo.dart';
+import './demo/page_demo.dart';
 void main() => runApp(App());
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NavigatorDemo(),
+      // home: NavigatorDemo(),
+      initialRoute: '/',
       routes: {
-        '/about': (context) => Page(title: 'About',)
+        '/':(context) => Home(),
+        '/about': (context) => Page(title: 'About')
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
