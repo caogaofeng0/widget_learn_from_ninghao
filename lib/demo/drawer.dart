@@ -29,6 +29,7 @@ class DrawerDemo extends StatelessWidget {
             onLongPress: () => Navigator.pop(context),
             title: Text('xiao ming', textAlign: TextAlign.end),
             trailing: Icon(Icons.message, color: Colors.black12),
+            leading: Icon(Icons.person_add, color: Colors.black12),
           ),
           ListTile(
             onLongPress: () => Navigator.pop(context),

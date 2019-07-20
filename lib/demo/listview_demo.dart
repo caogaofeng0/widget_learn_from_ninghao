@@ -20,15 +20,9 @@ class ListViewDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          ListView.builder(
-            itemCount: posts.length,
-            itemBuilder: _listItemBuilder,
-          ),
-        ],
-      ),
+    return ListView.builder(
+      itemCount: posts.length,
+      itemBuilder: _listItemBuilder,
     );
   }
 }
